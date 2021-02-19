@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Example</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <script src="~/Content/Winwheel.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+       </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year | Mesut Kaya</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none">
+        <div class="modal-dialog">
+            <div class="modal-content" style="top: 50px;">
+                <div class="modal-header modal-header-success" style="background-color: #0d5f0f;color: white !important;text-align: center;font-size: 30px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:white">×</button>
+                    <h3>
+                        <img src="~/Content/aaa.png"  style="width:20%"/>
+                        Tebrikler...
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <h3 style="font-weight:bold"></h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" style="margin-right:10px;" class="btn btn-primary pull-right" data-dismiss="modal" id="stopConfetti">Devam Et</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.jqueryscript.net/demo/Confetti-Animation-jQuery-Canvas-Confetti-js/jquery.confetti.js"></script>
+</body>
+</html>
